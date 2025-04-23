@@ -71,6 +71,3 @@ async def translate_text(text: str = Form(...)):
 #         return JSONResponse(content={"message": "Cropped successfully"}, status_code=200)
 #     except Exception as e:
 #         return JSONResponse(content={"message": "Failed to crop", "error": str(e)}, status_code=500)
-
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
