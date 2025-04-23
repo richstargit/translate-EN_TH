@@ -6,7 +6,6 @@ import easyocr
 from io import BytesIO
 from PIL import Image
 import numpy as np
-import os
 from deep_translator import GoogleTranslator
 
 app = FastAPI()

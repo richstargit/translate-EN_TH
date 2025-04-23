@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pillow
+numpy
+easyocr
+torch
+opencv-python-headless
+deep-translator
