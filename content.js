@@ -35,7 +35,7 @@ chrome.runtime.onMessage.addListener((event) => {
           const formData = new FormData();
           formData.append("image", blob, "cropped.png");
     
-          fetch("https://cac7-2405-9800-b661-759b-7d8b-2be4-94df-d84b.ngrok-free.app/upload", {
+          fetch("https://b62d-2405-9800-b661-759b-7d8b-2be4-94df-d84b.ngrok-free.app/upload", {
             method: "POST",
             body: formData
           })

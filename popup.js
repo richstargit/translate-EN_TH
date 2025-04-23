@@ -15,7 +15,7 @@ document.getElementById("captureBtn").onclick = () => {
     const formData = new FormData();
     formData.append("text", textarea.value);
 
-    fetch("https://cac7-2405-9800-b661-759b-7d8b-2be4-94df-d84b.ngrok-free.app/translate", {
+    fetch("https://b62d-2405-9800-b661-759b-7d8b-2be4-94df-d84b.ngrok-free.app/translate", {
       method: "POST",
       body: formData
     })

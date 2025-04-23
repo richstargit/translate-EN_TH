@@ -27,13 +27,7 @@ async def upload_image(image: UploadFile = File(...)):
         # แปลง Bytes -> Image -> Numpy array
         image_pil = Image.open(BytesIO(image_data)).convert("RGB")
         image_np = np.array(image_pil)
-        save_dir = "uploaded_images"
-        os.makedirs(save_dir, exist_ok=True)
-        filename = f"capture.png"
-        save_path = os.path.join(save_dir, filename)
-
-        # บันทึกภาพ
-        image_pil.save(save_path)
+        
         # OCR
         reader = easyocr.Reader(['en'])
         result = reader.readtext(image_np)
