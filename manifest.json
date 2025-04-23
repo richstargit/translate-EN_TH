@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Capture Translate EN-TH",
+    "description": "Capture selected area on screen by dragging mouse",
+    "version": "1.0",
+    "permissions": ["activeTab","tabs","storage","downloads"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
